@@ -9,6 +9,12 @@
 @if $snippets_feature_viewport-visibility == true {
 /* Viewport visibility snippets
 ***********************************************/
+  @mixin viewport-visibility($val) {
+    #{$val} {
+      @content;
+    }
+  }
+
   @each $breakpoint, $media-rule in $viewport-visibility_breakpoints {
 
     .#{$breakpoint}_visible,

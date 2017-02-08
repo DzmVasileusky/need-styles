@@ -8,9 +8,9 @@ $snippets_feature_class-indentation: false;
 
 // Viewport visibility breakpoints
 $viewport-visibility_breakpoints: (
-  xs: '(max-width: '#{map-get($viewport_breakpoints_max, xs)}')',
-  sm: '(min-width: '#{map-get($viewport_breakpoints, sm)}') and (max-width: '#{map-get($viewport_breakpoints_max, sm)}')',
-  md: '(min-width: '#{map-get($viewport_breakpoints, md)}')'
+  xs: '(max-width: ' #{map-get($viewport_breakpoints_max, xs)} ')',
+  sm: '(min-width: ' #{map-get($viewport_breakpoints, sm)} ') and (max-width: ' #{map-get($viewport_breakpoints_max, sm)} ')',
+  md: '(min-width: ' #{map-get($viewport_breakpoints, md)} ')'
 );
 
 // Class indentation's values
