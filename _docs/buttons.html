@@ -1,0 +1,250 @@
+<!doctype html>
+<!--[if lte IE 8]> <html class="no-js ie8"> <![endif]-->
+<!--[if IE 9]> <html class="no-js ie9"> <![endif]-->
+<!--[if gt IE 9]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- SITE TITLE AND DESCRIPTION 
+    *********************************************** -->
+    <title>Buttons | NeedStyles</title>
+    <meta name="description" content="">
+
+    <!-- FIXES
+    *********************************************** -->
+    <meta name="format-detection" content="telephone=no">
+
+    <!-- STYLESHEETS
+    *********************************************** -->
+
+    <!-- Docs stylesheets -->
+    <link rel="stylesheet" href="assets/css/prettify.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Libs stylesheets -->
+    <link rel="stylesheet" href="../dist/needstyles.css">
+
+  </head>
+  <body>
+    <!-- WRAPPER
+    *********************************************** -->
+    <div class="docs_wrapper">      
+      <!-- HEADER
+      *********************************************** -->
+      <header id="docs_header">
+        <h1>Buttons</h1>
+      </header>
+      <!-- *********************************************** 
+      END HEADER -->
+
+      <!-- NAV
+      *********************************************** -->
+      <nav id="docs_page-nav">
+        <div class="docs_page-nav_button">
+          <span class="docs_page-nav_button_open"></span>
+          <span class="docs_page-nav_button_close">×</span>
+        </div>
+        <ul>
+          <li><a href="#anchor_buttons">Default buttons</a></li>
+          <li><a href="#anchor_colors">Button colors</a></li>
+          <li><a href="#anchor_styles">Button styles</a></li>
+          <li><a href="#anchor_groups">Button groups</a></li>
+        </ul>
+      </nav>
+      <!-- *********************************************** 
+      END NAV -->
+
+      <!-- CONTENT
+      *********************************************** -->
+      <div class="docs_content docs_typo">
+        
+        <!-- GRID
+        *********************************************** -->
+        <div class="content">
+          <h2 id="anchor_buttons">Default buttons</h2>
+          <p>Default button is created with <span class="docs_mark">.button</span> class applied to <span class="docs_mark">&lt;a&gt;</span>, <span class="docs_mark">&lt;button&gt;</span> or <span class="docs_mark">&lt;input type=submit&gt;</span> tag.</p>
+          <p class="docs_subheading"><strong>Code</strong></p>
+          <pre class="prettyprint">
+&lt;a href="#" class="button">Default button&lt;/a>
+&lt;button class="button">Default button&lt;/button>
+&lt;input type="submit" class="button" value="Default button"></pre>
+          <p class="docs_subheading"><strong>Demo</strong></p>
+          <p>
+            <a href="#" class="button">Default button</a>
+            <button class="button">Default button</button>
+            <input type="submit" class="button" value="Default button">
+          </p>
+          <p class="docs_indent-section">For the block behavior use <span class="docs_mark">.button--block</span> class.</p>
+          <p class="docs_subheading"><strong>Code</strong></p>
+          <pre class="prettyprint">
+&lt;div class="row">
+  &lt;div class="col-12 xs_col-4 sm_col-3">
+    &lt;a href="#" class="button button--block">Block button&lt;/a>
+  &lt;/div>
+  &lt;div class="col-12 xs_col-4 sm_col-3">
+    &lt;a href="#" class="button button--block">Block button&lt;/a>
+  &lt;/div>
+  &lt;div class="col-12 xs_col-4 sm_col-3">
+    &lt;a href="#" class="button button--block">Block button&lt;/a>
+  &lt;/div>
+&lt;/div></pre>
+          <p class="docs_subheading"><strong>Demo</strong></p>
+          <div class="row">
+            <div class="col-12 xs_col-4 sm_col-3">
+              <a href="#" class="button button--block">Block button</a>
+            </div>
+            <div class="col-12 xs_col-4 sm_col-3">
+              <a href="#" class="button button--block">Block button</a>
+            </div>
+            <div class="col-12 xs_col-4 sm_col-3">
+              <a href="#" class="button button--block">Block button</a>
+            </div>
+          </div>
+          <h2 id="anchor_colors">Button colors</h2>
+          <p>Buttons can have as much color modes as you want - just set name/color pairs in <span class="docs_mark">$inputs_color_additional</span> or global <span class="docs_mark">$color_additional</span> map. Then use custom colors by adding color name suffix to button class.</p>
+          <p class="docs_subheading"><strong>Code</strong></p>
+          <pre class="prettyprint">
+&lt;button class="button">Primary&lt;/button>
+&lt;button class="button-success">Success&lt;/button>
+&lt;button class="button-error">Error&lt;/button></pre>
+          <p class="docs_subheading"><strong>Demo</strong></p>
+          <p>
+            <button class="button">Primary</button>
+            <button class="button-success">Success</button>
+            <button class="button-error">Error</button>
+          </p>
+          <h2 id="anchor_styles">Button styles</h2>
+          <p>Buttons are implemented in two commonly used simple styles. Each style's class name is formed by adding a <span class="docs_mark">.button-</span> prefix to the name of the type (except default flat).</p>
+          <p class="docs_subheading"><strong>Code</strong></p>
+          <pre class="prettyprint">
+&lt;p>
+  &lt;button class="button-outline">Primary&lt;/button>
+  &lt;button class="button-outline-success">Success&lt;/button>
+  &lt;button class="button-outline-error">Error&lt;/button>
+&lt;/p></pre>
+          <p class="docs_subheading"><strong>Demo</strong></p>
+          <p>
+            <button class="button-outline">Primary</button>
+            <button class="button-outline-success">Success</button>
+            <button class="button-outline-error">Error</button>
+          </p>
+          <h2 id="anchor_groups">Button groups</h2>
+          <p>Buttons can be united into seamless group by wrapping them with <span class="docs_mark">.button-group</span> element.</p>
+          <p class="docs_subheading"><strong>Code</strong></p>
+          <pre class="prettyprint">
+&lt;div class="button-group">
+  &lt;button class="button">Primary&lt;/button>
+  &lt;button class="button">Primary&lt;/button>
+  &lt;button class="button">Primary&lt;/button>
+&lt;/div>
+&lt;div class="button-group">
+  &lt;button class="button">Primary&lt;/button>
+  &lt;button class="button-success">Success&lt;/button>
+  &lt;button class="button-error">Error&lt;/button>
+&lt;/div>
+&lt;div class="button-group">
+  &lt;a href="#" class="button-outline">Primary&lt;/a>
+  &lt;a href="#" class="button-outline">Primary&lt;/a>
+  &lt;a href="#" class="button-outline">Primary&lt;/a>
+&lt;/div></pre>
+          <p class="docs_subheading"><strong>Demo</strong></p>
+          <div class="button-group">
+            <button class="button">Primary</button>
+            <button class="button">Primary</button>
+            <button class="button">Primary</button>
+          </div>
+          <div class="button-group">
+            <button class="button">Primary</button>
+            <button class="button-success">Success</button>
+            <button class="button-error">Error</button>
+          </div>
+          <div class="button-group">
+            <a href="#" class="button-outline">Primary</a>
+            <a href="#" class="button-outline">Primary</a>
+            <a href="#" class="button-outline">Primary</a>
+          </div>
+          <h2 id="anchor_custom-class">Semantic classes / Mixins</h2>
+          <p>If you are a fan of semantic and clean HTML code, you may like to use your own class names for structure blocks. We designed mixins that can apply framework styles to your own classes.</p>
+          <p class="docs_subheading"><strong>Mixins list</strong></p>
+          <table>
+            <tr>
+              <th>Mixin</th>
+              <th>Description</th>
+              <th>Variables</th>
+            </tr>
+            <tr>
+              <td><pre class="prettyprint prettyprint-plain">ns_button_common()</pre></td>
+              <td>Add necessary for any button settings and style resets. <br>You shouldn't use it with <span class="docs_mark">ns_button-*</span> mixins. It is included already</td>
+              <td>$height, $padding, $font-size, $line-height, $border-width, $border-radius, $font-weight, $text-align, $background, $border-color, $color</td>
+            </tr>
+            <tr>
+              <td><pre class="prettyprint prettyprint-plain">ns_button()</pre></td>
+              <td>Create flat button</td>
+              <td>$height, $padding, $font-size, $line-height, $border-width, $border-radius, $font-weight, $text-align, $background, $border-color, $color</td>
+            </tr>
+            <tr>
+              <td><pre class="prettyprint prettyprint-plain">ns_button-outline()</pre></td>
+              <td>Create outline button</td>
+              <td>$height, $padding, $font-size, $line-height, $border-width, $border-radius, $font-weight, $text-align, $background, $border-color, $color</td>
+            </tr>
+          </table>
+          <p>Examples:</p>
+          <p class="docs_subheading"><strong>SCSS</strong></p>
+          <pre class="prettyprint">
+.custom-button-name {
+  @include ns_button($height: 60px, $padding: 40px; $font-size: 20px; $background: #000); // create flat button
+}</pre>
+          <h2 id="anchor_config">Setting buttons config</h2>
+          <p>The module has common input settings and individual button settings. Settings are in <span class="docs_mark">_config.scss</span> file.</p>
+          <p class="docs_subheading"><strong>Settings list</strong></p>
+          <table>
+            <tr>
+              <th>Name</th>
+              <th>Description</th>
+              <th>Values</th>
+            </tr>
+            <tr>
+              <td>$button_font-size</td>
+              <td>Button font size</td>
+              <td>px</td>
+            </tr>
+            <tr>
+              <td>$button_border-width</td>
+              <td>Border width of default flat button</td>
+              <td>px</td>
+            </tr>
+            <tr>
+              <td>$button_outline_border-width</td>
+              <td>Border width of outline button</td>
+              <td>px</td>
+            </tr>
+            <tr>
+              <td>$button_border-radius</td>
+              <td>Border radius of buttons</td>
+              <td>as in spec.</td>
+            </tr>
+          </table>
+        </div>
+        <!-- *********************************************** 
+        END GRID -->
+
+      </div>
+      <!-- *********************************************** 
+      END CONTENT -->
+
+    </div>
+    <!-- *********************************************** 
+    END WRAPPER -->
+
+    <!-- SCRIPTS
+    *********************************************** -->
+
+    <!-- Docs scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.singlePageNav.js"></script>
+    <script src="assets/js/prettify.js"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

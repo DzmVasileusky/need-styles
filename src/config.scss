@@ -5,7 +5,7 @@
 // Interface grid and base sizes
 /////////////////////////////////////////////////
 $unit: 4px;
-$base_font-size: 16rem;
+$base_font-size: 1.6rem;
 $base_line-height: 1.5;
 $base_font-family: 'Open Sans', 'Helvetica', 'Verdana', 'Arial', sans-serif;
 
@@ -26,8 +26,10 @@ $color_bg: #fff; // base theme background color
 $color_text: #0d0d0d; // contrast to base theme background color for text
 $color_brand: #ff981a; // special brand theme color   
 // $color_brand2: #ff981a; // special brand theme color 2
-$color_success: #3DCC80; // success status color
-$color_error: #E21F1E; // danger/error status color
+$color_additional: (
+  success: #3DCC80,
+  error: #E21F1E
+);
 
 // Media queries breakpoint
 /////////////////////////////////////////////////
