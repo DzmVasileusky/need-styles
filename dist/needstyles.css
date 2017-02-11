@@ -2363,15 +2363,15 @@ body {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  text-align: center;
-  color: #fff;
-  background-color: #ff981a;
   padding: 11px 12.6px;
   line-height: 14px;
   height: 36px;
   font-size: 14px;
   border-width: 0;
   border-radius: 0;
+  text-align: center;
+  color: #fff;
+  background-color: #ff981a;
 }
 
 .button:focus {
@@ -2411,15 +2411,15 @@ fieldset[disabled] .button:focus {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  text-align: center;
-  color: #fff;
-  background-color: #3DCC80;
   padding: 11px 12.6px;
   line-height: 14px;
   height: 36px;
   font-size: 14px;
   border-width: 0;
   border-radius: 0;
+  text-align: center;
+  color: #fff;
+  background-color: #3DCC80;
 }
 
 .button-success:focus {
@@ -2459,15 +2459,15 @@ fieldset[disabled] .button-success:focus {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  text-align: center;
-  color: #fff;
-  background-color: #E21F1E;
   padding: 11px 12.6px;
   line-height: 14px;
   height: 36px;
   font-size: 14px;
   border-width: 0;
   border-radius: 0;
+  text-align: center;
+  color: #fff;
+  background-color: #E21F1E;
 }
 
 .button-error:focus {
@@ -2510,16 +2510,16 @@ fieldset[disabled] .button-error:focus {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  text-align: center;
-  color: #0d0d0d;
-  background-color: transparent;
-  border-color: #ff981a;
   padding: 9px 12.6px;
   line-height: 14px;
   height: 36px;
   font-size: 14px;
   border-width: 2px;
   border-radius: 0;
+  text-align: center;
+  color: #0d0d0d;
+  background-color: transparent;
+  border-color: #ff981a;
 }
 
 .button-outline:focus {
@@ -2560,16 +2560,16 @@ fieldset[disabled] .button-outline:focus {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  text-align: center;
-  color: #0d0d0d;
-  background-color: transparent;
-  border-color: #3DCC80;
   padding: 9px 12.6px;
   line-height: 14px;
   height: 36px;
   font-size: 14px;
   border-width: 2px;
   border-radius: 0;
+  text-align: center;
+  color: #0d0d0d;
+  background-color: transparent;
+  border-color: #3DCC80;
 }
 
 .button-outline-success:focus {
@@ -2610,16 +2610,16 @@ fieldset[disabled] .button-outline-success:focus {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  text-align: center;
-  color: #0d0d0d;
-  background-color: transparent;
-  border-color: #E21F1E;
   padding: 9px 12.6px;
   line-height: 14px;
   height: 36px;
   font-size: 14px;
   border-width: 2px;
   border-radius: 0;
+  text-align: center;
+  color: #0d0d0d;
+  background-color: transparent;
+  border-color: #E21F1E;
 }
 
 .button-outline-error:focus {
@@ -2691,6 +2691,114 @@ fieldset[disabled] .button-outline-error:focus {
 
 .button-group > [class*='button'] + [class*='button'] {
   border-left: 0;
+}
+
+/*********************************************** 
+  Text inputs
+***********************************************/
+/* Default text inputs
+***********************************************/
+.text-input {
+  display: block;
+  width: 100%;
+  margin: 0;
+  border-style: solid;
+  background-image: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding: 5.5px 12.6px;
+  line-height: 21px;
+  height: 36px;
+  font-size: 14px;
+  border-width: 2px;
+  border-radius: 0;
+  text-align: left;
+  color: #0d0d0d;
+  background-color: #fff;
+  border-color: #a6a6a6;
+}
+
+textarea.text-input, select[multiple].text-input {
+  height: auto;
+}
+
+:not(.ie8) select.text-input {
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAG0lEQVR42mNgwAfKy8v/48I4FeA0AacVDFQBAP9wJkE/KhUMAAAAAElFTkSuQmCC");
+  background-repeat: no-repeat;
+  background-position: right 6.3px center;
+}
+
+select.text-input::-ms-expand {
+  display: none;
+}
+
+.ie9 select.text-input {
+  background-image: none;
+}
+
+.text-input::-webkit-input-placeholder {
+  color: #868686;
+}
+
+.text-input:-moz-placeholder {
+  color: #868686;
+}
+
+.text-input::-moz-placeholder {
+  color: #868686;
+}
+
+.text-input:-ms-input-placeholder {
+  color: #868686;
+}
+
+.text-input::input-placeholder {
+  color: #868686;
+}
+
+.text-input.placeholder {
+  color: #868686;
+}
+
+.text-input:focus {
+  outline: 0;
+  -webkit-box-shadow: inset 0 0 3px #8d8d8d;
+  box-shadow: inset 0 0 3px #8d8d8d;
+  border-color: #8d8d8d;
+}
+
+.text-input.success,
+.success .text-input {
+  border-color: #3DCC80;
+}
+
+.text-input.success:focus,
+.success .text-input:focus {
+  -webkit-box-shadow: inset 0 0 3px #3DCC80;
+  box-shadow: inset 0 0 3px #3DCC80;
+}
+
+.text-input.error,
+.error .text-input {
+  border-color: #E21F1E;
+}
+
+.text-input.error:focus,
+.error .text-input:focus {
+  -webkit-box-shadow: inset 0 0 3px #E21F1E;
+  box-shadow: inset 0 0 3px #E21F1E;
+}
+
+.text-input.disabled, .text-input.disabled:hover, .text-input.disabled:active, .text-input.disabled:focus, .text-input[disabled], .text-input[disabled]:hover, .text-input[disabled]:active, .text-input[disabled]:focus,
+fieldset[disabled] .text-input,
+fieldset[disabled] .text-input:hover,
+fieldset[disabled] .text-input:active,
+fieldset[disabled] .text-input:focus {
+  cursor: not-allowed;
+  border-color: #a6a6a6;
+  opacity: 0.45;
+  filter: alpha(opacity=45);
 }
 
 /*# sourceMappingURL=needstyles.css.map */

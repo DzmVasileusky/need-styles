@@ -16,7 +16,7 @@ $input-group_feature_collapse: true;
 
 // Common colour settings
 $inputs_color_background: $color_bg;
-$inputs_color_border: lighten($color_text, 50%);
+$inputs_color_border: lighten($color_text, 60%);
 $inputs_color_foreground: $color_text;
 $inputs_color_button-text: #fff;
 $inputs_color_primary: $color_brand;
@@ -39,7 +39,6 @@ $button_outline_border-width: 2px;
 $text-input_font-size: 14px;
 $text-input_line-height: $base_line-height * $text-input_font-size;
 $text-input_border-radius: 0;
-$text-input_font-weight: normal;
 $text-input_text-align: left;
 $text-input_border-width: 2px;
 

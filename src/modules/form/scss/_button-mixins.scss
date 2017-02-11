@@ -16,6 +16,9 @@
   text-decoration: none;
   user-select: none;
 
+  // size styles
+  @include ns_input_size($height, $padding, $font-size, $line-height, $border-width, $border-radius); 
+  
   // text styles
   @if $font-weight {
     font-weight: $font-weight;
@@ -30,9 +33,6 @@
   @if $border-color {
     border-color: $border-color;
   }
-
-  // size styles
-  @include ns_input_size($height, $padding, $font-size, $line-height, $border-width, $border-radius); 
 
   &:focus {
     outline: 0;
