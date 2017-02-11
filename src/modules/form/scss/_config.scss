@@ -20,9 +20,6 @@ $inputs_color_border: lighten($color_text, 60%);
 $inputs_color_foreground: $color_text;
 $inputs_color_button-text: #fff;
 $inputs_color_primary: $color_brand;
-$inputs_color_secondary: #ccc;
-$inputs_color_success: #3DCC80;
-$inputs_color_error: #E21F1E;
 $inputs_color_additional: $color_additional;
 
 // Defaul input size settings
@@ -43,13 +40,11 @@ $text-input_text-align: left;
 $text-input_border-width: 2px;
 
 // Checkbox and radio
-$checkbox_size: 20px;
-$checkbox_label_font-style: normal;
-$checkbox_border-width: 2px;
-$checkbox_border-radius: 2px;
-$checkbox_label_font-size: $base_font-size - 2rem;
-$checkbox_label_line-height: $base_line-height;
-$checkbox_label_font-weight: normal;
+$checkbox_size: 1.6rem;
+$checkbox_border-width: .2rem;
+$checkbox_border-radius: .2rem;
+$checkbox_font-size: $base_font-size - .2rem;
+$checkbox_line-height: $base_line-height;
 
 // Form label
 $form-label_color: get-color(text-secondary);
