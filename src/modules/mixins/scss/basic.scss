@@ -104,3 +104,31 @@
     }
   }
 }
+
+//  Get hover of a color
+/////////////////////////////////////////////////
+@function ns_hover($color) {
+  
+  @if lightness($color) < 15% {
+    $color: lighten($color, 20);
+  } @else if lightness($color) < 30% {
+    $color: lighten($color, 10);
+  } @else if lightness($color) > 80% {
+    $color: darken($color, 5);
+  } @else {
+    $color: adjust_hue(lighten($color, 7), 3);
+  }
+
+  @return $color;
+}
+
+//  Get inverted color based on background
+/////////////////////////////////////////////////
+@function ns_inverted($color, $background, $light_percent: 60%, $dark_percent: 70%) {
+  
+  @if (lightness($background) > $light_percent and lightness($color) > $light_percent) or (lightness($background) < $dark_percent and lightness($color) < $dark_percent) {
+    $color: invert($color);
+  }
+
+  @return $color;
+}
