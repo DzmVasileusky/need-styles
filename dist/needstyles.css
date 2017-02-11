@@ -2345,6 +2345,16 @@ body {
 /*********************************************** 
   Form controls and layout
 ***********************************************/
+/* $switch_width: 50px;
+$switch_height: 30px;
+$switch_border-width: 1px;
+$switch_border-color: transparent;
+$switch_label_font-size: $base_font-size - 2rem;
+$switch_label_font-style: normal;
+$switch_label_font-weight: normal; */
+/* $input-group_appendix_color_background: lighten($inputs_color_border, 10%);
+$input-group_appendix_color_border: $inputs_color_border;
+$input-group_appendix_color_text: $inputs_color_foreground; */
 /*********************************************** 
   Buttons
 ***********************************************/
@@ -3467,6 +3477,120 @@ html:not(.ie8) .radio-filled input[type=radio].error:checked + span:before {
 .radio--inline + .radio,
 .radio--inline + .checkbox-filled,
 .radio--inline + .radio-filled {
+  margin-top: 0;
+}
+
+/*********************************************** 
+  Form layout
+***********************************************/
+/* Form label
+***********************************************/
+.form-label {
+  display: inline-block;
+  max-width: 100%;
+  margin-bottom: 4px;
+  color: #0d0d0d;
+  font-size: 12px;
+  line-height: 1;
+}
+
+.form-inline .form-label {
+  margin-bottom: 0;
+  margin-right: 4px;
+}
+
+.form-horizontal .form-label {
+  text-align: right;
+  margin-top: 12px;
+}
+
+/* Form group
+***********************************************/
+.form-group {
+  position: relative;
+  margin-top: 12px;
+}
+
+form > .form-group:first-child {
+  margin-top: 0;
+}
+
+.form-inline .form-group {
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 0;
+}
+
+.form-inline .form-group .text-input {
+  display: inline-block;
+  width: auto;
+  vertical-align: middle;
+}
+
+.form-inline .form-group + .form-group {
+  margin-left: 12px;
+}
+
+.form-horizontal .form-group {
+  margin-right: -12px;
+  margin-left: -12px;
+}
+
+.form-horizontal .form-group:before, .form-horizontal .form-group:after {
+  content: '';
+  display: table;
+}
+
+.form-horizontal .form-group:after {
+  clear: both;
+}
+
+/* Form header
+***********************************************/
+.form-header {
+  position: relative;
+  margin-bottom: 24px;
+}
+
+.form-header h1, .form-header h2, .form-header h3, .form-header h4, .form-header h5, .form-header h6,
+.form-header .h1, .form-header .h2, .form-header .h3, .form-header .h4, .form-header .h5, .form-header .h6 {
+  margin: 0;
+}
+
+/* Form footer
+***********************************************/
+.form-footer {
+  position: relative;
+  margin-top: 24px;
+}
+
+.form-horizontal .form-footer {
+  margin-right: -12px;
+  margin-left: -12px;
+}
+
+.form-horizontal .form-footer:before, .form-horizontal .form-footer:after {
+  content: '';
+  display: table;
+}
+
+.form-horizontal .form-footer:after {
+  clear: both;
+}
+
+/* Form text
+***********************************************/
+.form-text {
+  max-width: 100%;
+  margin-top: 4px;
+  color: #0d0d0d;
+  font-size: 12px;
+  line-height: 1;
+}
+
+.form-inline .form-text {
+  display: inline-block;
+  vertical-align: middle;
   margin-top: 0;
 }
 

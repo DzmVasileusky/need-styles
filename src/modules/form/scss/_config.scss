@@ -19,12 +19,16 @@ $inputs_color_background: $color_bg;
 $inputs_color_border: lighten($color_text, 60%);
 $inputs_color_foreground: $color_text;
 $inputs_color_button-text: #fff;
+$form-label_color: $color_text;
 $inputs_color_primary: $color_brand;
 $inputs_color_additional: $color_additional;
 
 // Defaul input size settings
 $inputs_height: 9 * $unit;
 $inputs_padding-horizontal: $inputs_height * 0.35;
+$form_margin-sm: $indent-mc;
+$form_margin: $indent-xs;
+$form_margin-lg: $indent-sm;
 
 // Buttons
 $button_font-size: 14px;
@@ -47,31 +51,23 @@ $checkbox_font-size: $base_font-size - .2rem;
 $checkbox_line-height: $base_line-height;
 
 // Form label
-$form-label_color: get-color(text-secondary);
-$form-label_font-family: $base_font-family;
 $form-label_font-size: 12px;
-$form-label_line-height: 100%;
-$form-label_font-style: italic;
-$form-label_font-weight: normal;
+$form-label_line-height: 1;
 
 // Form text
-$form-text_color: get-color(text-secondary);
-$form-text_font-family: $base_font-family;
 $form-text_font-size: 13px;
-$form-text_line-height: 100%;
-$form-text_font-style: normal;
-$form-text_font-weight: normal;
+$form-text_line-height: 1;
 
 // Switch
-$switch_width: 50px;
+/* $switch_width: 50px;
 $switch_height: 30px;
 $switch_border-width: 1px;
 $switch_border-color: transparent;
 $switch_label_font-size: $base_font-size - 2rem;
 $switch_label_font-style: normal;
-$switch_label_font-weight: normal;
+$switch_label_font-weight: normal; */
 
 // Input group appendix
-$input-group_appendix_color_background: lighten($inputs_color_border, 10%);
+/* $input-group_appendix_color_background: lighten($inputs_color_border, 10%);
 $input-group_appendix_color_border: $inputs_color_border;
-$input-group_appendix_color_text: $inputs_color_foreground;
+$input-group_appendix_color_text: $inputs_color_foreground; */
