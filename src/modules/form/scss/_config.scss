@@ -39,9 +39,9 @@ $button_outline_border-width: 2px;
 // Text inputs
 $text-input_font-size: 14px;
 $text-input_line-height: $base_line-height * $text-input_font-size;
-$text-input_border-radius: 0;
 $text-input_text-align: left;
 $text-input_border-width: 2px;
+$text-input_border-radius: 0;
 
 // Checkbox and radio
 $checkbox_size: 1.6rem;
@@ -57,17 +57,3 @@ $form-label_line-height: 1;
 // Form text
 $form-text_font-size: 13px;
 $form-text_line-height: 1;
-
-// Switch
-/* $switch_width: 50px;
-$switch_height: 30px;
-$switch_border-width: 1px;
-$switch_border-color: transparent;
-$switch_label_font-size: $base_font-size - 2rem;
-$switch_label_font-style: normal;
-$switch_label_font-weight: normal; */
-
-// Input group appendix
-/* $input-group_appendix_color_background: lighten($inputs_color_border, 10%);
-$input-group_appendix_color_border: $inputs_color_border;
-$input-group_appendix_color_text: $inputs_color_foreground; */

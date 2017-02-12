@@ -2345,16 +2345,6 @@ body {
 /*********************************************** 
   Form controls and layout
 ***********************************************/
-/* $switch_width: 50px;
-$switch_height: 30px;
-$switch_border-width: 1px;
-$switch_border-color: transparent;
-$switch_label_font-size: $base_font-size - 2rem;
-$switch_label_font-style: normal;
-$switch_label_font-weight: normal; */
-/* $input-group_appendix_color_background: lighten($inputs_color_border, 10%);
-$input-group_appendix_color_border: $inputs_color_border;
-$input-group_appendix_color_text: $inputs_color_foreground; */
 /*********************************************** 
   Buttons
 ***********************************************/
